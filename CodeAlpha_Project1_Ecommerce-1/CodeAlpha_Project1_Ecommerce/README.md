@@ -7,9 +7,9 @@ A complete beginner-friendly full-stack e-commerce project built for the CodeAlp
 A full-stack e-commerce web application
 built during the CodeAlpha Full Stack Development Internship.
 
-🌐 Live Demo: YOUR-LINK
-🎥 Video Demo: YOUR-LINK
-💻 GitHub: YOUR-LINK
+🌐 Live Demo: 
+🎥 Video Demo:
+💻 GitHub:
 
 ## Stack
 
