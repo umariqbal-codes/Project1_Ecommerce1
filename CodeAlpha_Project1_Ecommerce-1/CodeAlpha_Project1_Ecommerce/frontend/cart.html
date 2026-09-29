@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | ShopSphere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">Shop<span>Sphere</span></a>
+    <nav>
+      <a href="index.html">Shop</a>
+      <a href="orders.html">Orders</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="#" id="logoutLink" class="hidden">Logout</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main class="section narrow">
+    <p class="eyebrow">YOUR CART</p>
+    <h1>Shopping cart</h1>
+    <div id="cartPage"></div>
+
+    <section id="checkoutSection" class="checkout hidden">
+      <h2>Checkout</h2>
+      <form id="checkoutForm">
+        <div class="form-grid">
+          <label>Full name<input name="name" required maxlength="80"></label>
+          <label>Address<input name="address" required maxlength="200"></label>
+          <label>City<input name="city" required maxlength="80"></label>
+          <label>State<input name="state" required maxlength="80"></label>
+          <label>Pincode<input name="pincode" required pattern="\d{6}" maxlength="6" inputmode="numeric"></label>
+        </div>
+        <button class="btn primary" type="submit">Place Demo Order</button>
+        <p id="checkoutMessage" class="message"></p>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

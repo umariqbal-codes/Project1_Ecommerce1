@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CodeAlpha Simple E-commerce Store">
+  <title>Shop Sphere | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">Shop<span>Sphere</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="orders.html" id="ordersLink">Orders</a>
+      <a href="login.html" id="loginLink">Login</a>
+      <a href="#" id="logoutLink" class="hidden">Logout</a>
+      <a class="cart-link" href="cart.html">Cart <span id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-badge"><span class="pulse-dot"></span> CodeAlpha • Full Stack Project 1</div>
+        <p class="eyebrow">SHOPSPHERE E-COMMERCE</p>
+        <h1>Everything you need.<br><span>One beautiful store.</span></h1>
+        <p>Browse products, explore details, manage your cart and complete a full demo checkout — powered by Express.js
+          and SQLite.</p>
+        <div class="hero-actions"><a href="#products" class="btn primary">Shop Now →</a><a href="register.html"
+            class="btn glass">Create Account</a></div>
+        <div class="hero-stats">
+          <div><strong>6+</strong><span>Products</span></div>
+          <div><strong>REST</strong><span>API</span></div>
+          <div><strong>SQLite</strong><span>Database</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="E-commerce graphic">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="store-card">
+          <div class="store-top"><span>🛍️</span><strong>ShopSphere</strong><i>•••</i></div>
+          <div class="store-visual">
+            <div class="bag">🛍️</div>
+            <div><small>FEATURED DROP</small>
+              <h3>Smart shopping.</h3>
+              <p>Simple. Fast. Modern.</p>
+            </div>
+          </div>
+          <div class="mini-products">
+            <div>🎧<span>Audio</span></div>
+            <div>⌚<span>Tech</span></div>
+            <div>🎒<span>Style</span></div>
+          </div>
+        </div>
+        <div class="float-card float-cart">🛒 <b>Cart</b><span>3 items</span></div>
+        <div class="float-card float-secure">✓ <b>Secure</b><span>JWT Login</span></div>
+      </div>
+    </section>
+
+    <section class="feature-strip">
+      <div><span>✦</span>
+        <div><strong>Product discovery</strong><small>Search & categories</small></div>
+      </div>
+      <div><span>▣</span>
+        <div><strong>Easy checkout</strong><small>Validated order flow</small></div>
+      </div>
+      <div><span>✓</span>
+        <div><strong>Stock aware</strong><small>Real-time availability</small></div>
+      </div>
+      <div><span>↗</span>
+        <div><strong>Order history</strong><small>Track your purchases</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OUR PRODUCTS</p>
+          <h2>Featured products</h2>
+        </div>
+        <div class="filters">
+          <input id="searchInput" type="search" placeholder="Search products...">
+          <select id="categorySelect">
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home</option>
+          </select>
+        </div>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+      <p id="productMessage" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built as a Full Stack Development internship project for CodeAlpha.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

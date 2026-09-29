@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ShopSphere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="index.html">Shop<span>Sphere</span></a>
+    <nav><a href="index.html">Shop</a><a href="cart.html">Cart <span id="cartCount">0</span></a></nav>
+  </header>
+
+  <main class="auth-wrap">
+    <form id="loginForm" class="auth-card">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Login</h1>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>Password<input name="password" type="password" required autocomplete="current-password"></label>
+      <button class="btn primary full" type="submit">Login</button>
+      <p id="authMessage" class="message"></p>
+      <p>Don't have an account? <a href="register.html">Create one</a></p>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
